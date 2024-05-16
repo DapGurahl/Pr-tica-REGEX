@@ -1,0 +1,8 @@
+import re
+padrao = "[0-9]{5}[-][0-9]{4}"
+
+texto = input()
+
+localiza_padrao = re.findall(padrao, texto)
+
+print(localiza_padrao)
